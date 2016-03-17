@@ -21,6 +21,7 @@
   <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
   <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -31,34 +32,46 @@
 
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
-		<header class="page-header container">
+		<header class="page-header">
 
 			<a href="<?php echo site_url(); ?>" class="top-logo">
 				<div class="row">
-        <div class="col-lg-12" style="text-align: center;">
-          <span class="title"><?php bloginfo('name'); ?></span>
+
+           <div class="col-lg-12" style="text-align: center;">
+               <span class="title"><?php bloginfo('name'); ?></span>
+           </div>
+
+           <div class="col-lg-12">
+  	   	       <span class="sub-title"
+                     style="font-family: 'Pompiere', cursive;
+                            font-size: 1.5em;
+                            letter-spacing: 5px;
+                            text-align: center;">
+                     <?php bloginfo('description'); ?>
+               </span>
           </div>
-              <div class="col-lg-12">
-			   	<span class="sub-title"
-                style="font-family: 'Pompiere', cursive;
-                       font-size: 1.5em;
-                       letter-spacing: 5px;
-                       text-align: center;">
-                       <?php bloginfo('description'); ?></span>
-                       </div>
+
         </div>
-			</a>
+		  </a>
+        </header>
+</div>
 
-      <div class="header-nav">
-         <ul>
-  				  <?php wp_nav_menu(array('theme_location' => 'primary-menu')); ?>
-         </ul>
-     </div>
+    <div id="header-nav">
+        <ul>
+          <li><a href="<?php echo get_settings('home'); ?>">a&w</a></li>
+          <li><a href="aliveandwick/wp-content/themes/skillcrushstarter/about.php">about</a></li>
+          <li><a href="aliveandwick/wp-content/themes/skillcrushstarter/about.php">contact</a></li>
+          <li><a href="aliveandwick/wp-content/themes/skillcrushstarter/about.php">blog</a></li>
+          <li><a href="aliveandwick/wp-content/themes/skillcrushstarter/about.php">the difference</a></li>
+        </ul>
+    </div>
 
-		</header>
+<hr>
+
 
 		<div id="main" class="site-main">
 
+</body>
 
 
 

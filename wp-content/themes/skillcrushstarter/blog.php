@@ -1,6 +1,7 @@
+
 <?php
 /**
-* The main template file
+ * The main template file
  *
  * This is the most generic template file in a WordPress theme and one
  * of the two required files for a theme (the other being style.css).
@@ -13,24 +14,21 @@
  * @subpackage Skillcrush_Starter
  * @since Skillcrush Starter 1.0
  */
+
 get_header(); ?>
 
-
-<section class="index-page">
-  <div class="home-page main-content ">
-      <img src="http://localhost:8888/aliveandwick/wp-content/uploads/foodshot.png"
-           style="width: 100%;
-                  height: auto;"/>
+<section class="blog-page">
+  <div class="main-content">
+    <?php if ( have_posts() ): ?>
+      <?php while ( have_posts() ) : the_post(); ?>
+        <h3>Hello, Skillcrushers!</h3>
+        <p>This is your main index page.</p>
+        <p>The file that creates this default page is index.php.</p>
+      <?php endwhile; ?>
+    <?php endif; ?>
   </div>
 
+  <?php get_sidebar(); ?>
 </section>
 
 <?php get_footer(); ?>
-
-
-
-
-
-
-
-

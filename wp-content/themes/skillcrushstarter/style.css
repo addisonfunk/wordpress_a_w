@@ -169,9 +169,9 @@ body {
   width: 960px;
   margin: auto;
 }
-.page-header {
+/*.page-header {
   border-bottom: 1px solid #bfbfbf;
-}
+}*/
 .page-header a {
   text-decoration: none;
 }
@@ -181,7 +181,7 @@ body {
 .page-header .top-logo .title {
   color: #3b3b3b;
   font-family: 'Shadows Into Light', cursive;
-  font-size: 6em;
+  font-size: 5em;
   letter-spacing: -0.034em;
   text-transform: lowercase;
 /*  margin-left: 40%;*/
@@ -196,17 +196,40 @@ body {
   flex-direction: row;
 }
 
-/*.top-nav {
-  width: 100px;
-  height: 100px;
-  margin: auto;
-}*/
-
 .main-content {
-  padding: 55px 47px 0 0;
+  padding: 55px 47px 55px 47px;
+  float: left;
+  width: 100%;
+}
+
+.home-page .main-content  {
   float: left;
   width: 69%;
 }
+
+#header-nav ul {
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+}
+
+#header-nav ul a {
+  margin: 10px;
+  color: black;
+}
+
+#header-nav ul a:hover {
+  color: grey;
+}
+
+#header-nav li {
+  display: inline;
+}
+
 #sidebar {
   border-left: 1px solid #bfbfbf;
   padding: 55px 0;
