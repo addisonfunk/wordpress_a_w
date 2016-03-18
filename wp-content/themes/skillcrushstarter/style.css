@@ -153,6 +153,7 @@ header, footer, section, aside, time, article {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 html,
 body {
